@@ -21,15 +21,18 @@ disqusShortname = ""              # disqus_shortname
 googleAnalytics = ""              # UA-XXXXXXXX-X
 copyright = ""                    # 默认为下面配置的author.name
 
-[author]                          # 必需
+# 必需
+[author]
   name = "gaofubao"
 
-[sitemap]                         # 必需
+# 必需
+[sitemap]
   changefreq = "weekly"
   priority = 0.5
   filename = "sitemap.xml"
 
-[[menu.main]]                     # 配置目录
+# 配置目录
+[[menu.main]]
   name = "Home"
   weight = 10
   identifier = "home"
@@ -52,7 +55,7 @@ copyright = ""                    # 默认为下面配置的author.name
 
 [params]
   version = "4.x"                           # Used to give a friendly message when you have an incompatible update
-  debug = true                              # If true, load `eruda.min.js`. See https://github.com/liriliri/eruda
+  debug = false                             # If true, load `eruda.min.js`. See https://github.com/liriliri/eruda
 
   since = "2016"                            # 站点建立时间
   # 指定 git 仓库地址，可以生成指向最近更新的 git commit 的链接，需要将 enableGitInfo 设置成 true
@@ -87,14 +90,11 @@ copyright = ""                    # 默认为下面配置的author.name
   mathjax = false                             # 是否使用mathjax（数学公式）, see https://www.mathjax.org/
   mathjaxEnableSingleDollar = false           # 是否使用 $...$ 即可進行inline latex渲染
   mathjaxEnableAutoNumber = false             # 是否使用公式自动编号
-  mathjaxUseLocalFiles = false  # You should install mathjax in `your-site/static/lib/mathjax`
+  mathjaxUseLocalFiles = false                # You should install mathjax in `your-site/static/lib/mathjax`
 
   postMetaInFooter = true   # 包含作者，上次修改时间，markdown链接，许可信息
   linkToMarkDown = false    # 链接到markdown原始文件（仅当允许hugo生成markdown文件时有效）
   contentCopyright = ''     # e.g. '<a rel="license noopener" href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank">CC BY-NC-ND 4.0</a>'
-
-  changyanAppid = ""        # Changyan app id             # 畅言
-  changyanAppkey = ""       # Changyan app key
 
   livereUID = ""            # LiveRe UID                  # 来必力
 
@@ -192,19 +192,18 @@ copyright = ""                    # 默认为下面配置的author.name
     unsafe = true
 
 # 将下面这段配置取消注释可以使 hugo 生成 .md 文件
-# Uncomment these options to make hugo output .md files.
-#[mediaTypes]
-#  [mediaTypes."text/plain"]
-#    suffixes = ["md"]
-#
-#[outputFormats.MarkDown]
-#  mediaType = "text/plain"
-#  isPlainText = true
-#  isHTML = false
-#
-#[outputs]
-#  home = ["HTML", "RSS"]
-#  page = ["HTML", "MarkDown"]
-#  section = ["HTML", "RSS"]
-#  taxonomy = ["HTML", "RSS"]
-#  taxonomyTerm = ["HTML"]
+[mediaTypes]
+  [mediaTypes."text/plain"]
+    suffixes = ["md"]
+
+[outputFormats.MarkDown]
+  mediaType = "text/plain"
+  isPlainText = true
+  isHTML = false
+
+[outputs]
+  home = ["HTML", "RSS"]
+  page = ["HTML", "MarkDown"]
+  section = ["HTML", "RSS"]
+  taxonomy = ["HTML", "RSS"]
+  taxonomyTerm = ["HTML"]

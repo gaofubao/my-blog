@@ -112,7 +112,8 @@ copyright = ""                    # 默认为下面配置的author.name
   # Show language selector for multilingual site.
   showLanguageSelector = false
 
-  [params.publicCDN]        # 启用公共CDN，需自行定义
+  # 启用公共CDN，需自行定义
+  [params.publicCDN]
     enable = true
     jquery = '<script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>'
     slideout = '<script src="https://cdn.jsdelivr.net/npm/slideout@1.0.1/dist/slideout.min.js" integrity="sha256-t+zJ/g8/KXIJMjSVQdnibt4dlaDxc9zXr/9oNPeWqdg=" crossorigin="anonymous"></script>'
@@ -130,58 +131,36 @@ copyright = ""                    # 默认为下面配置的author.name
     hint = 30               # 如果文章最后更新于这天数之前，显示提醒
     warn = 180              # 如果文章最后更新于这天数之前，显示警告
 
-  # Gitment is a comment system based on GitHub issues. see https://github.com/imsun/gitment
-  [params.gitment]
-    owner = ""              # Your GitHub ID
-    repo = ""               # The repo to store comments
-    clientId = ""           # Your client ID
-    clientSecret = ""       # Your client secret
-
-  # https://utteranc.es/
+  # 评论系统, see https://utteranc.es/
   [params.utterances]
     owner = "gaofubao"                 # Your GitHub ID
     repo = "gaofubao.github.io"        # The repo to store comments
 
-  # Gitalk is a comment system based on GitHub issues. see https://github.com/gitalk/gitalk
-  [params.gitalk]
-    owner = ""              # Your GitHub ID
-    repo = ""               # The repo to store comments
-    clientId = ""           # Your client ID
-    clientSecret = ""       # Your client secret
-
-  # Valine.
-  # You can get your appid and appkey from https://leancloud.cn
-  # more info please open https://valine.js.org
-  [params.valine]
-    enable = false
-    appId = '你的appId'
-    appKey = '你的appKey'
-    notify = false  # mail notifier , https://github.com/xCss/Valine/wiki
-    verify = false # Verification code
-    avatar = 'mm'
-    placeholder = '说点什么吧...'
-    visitor = false
-
-  [params.flowchartDiagrams]# see https://blog.olowolo.com/example-site/post/js-flowchart-diagrams/
+  # see https://blog.olowolo.com/example-site/post/js-flowchart-diagrams/
+  [params.flowchartDiagrams]
     enable = false
     options = ""
 
-  [params.sequenceDiagrams] # see https://blog.olowolo.com/example-site/post/js-sequence-diagrams/
+  # see https://blog.olowolo.com/example-site/post/js-sequence-diagrams/
+  [params.sequenceDiagrams]
     enable = false
     options = ""            # default: "{theme: 'simple'}"
 
-  [params.busuanzi]         # count web traffic by busuanzi                             # 是否使用不蒜子统计站点访问量
-    enable = false
+  # 是否使用不蒜子统计站点访问量
+  [params.busuanzi]
+    enable = true
     siteUV = true
     sitePV = true
     pagePV = true
 
-  [params.reward]                                         # 文章打赏
+   # 文章打赏
+  [params.reward]
     enable = false
     wechat = "/path/to/your/wechat-qr-code.png"           # 微信二维码
     alipay = "/path/to/your/alipay-qr-code.png"           # 支付宝二维码
 
-  [params.social]                                         # 社交链接
+  # 社交链接
+  [params.social]
     a-email = "mailto:your@email.com"
     b-stack-overflow = "http://localhost:1313"
     c-twitter = "http://localhost:1313"

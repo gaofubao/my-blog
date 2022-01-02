@@ -2,7 +2,7 @@
 title: "Syntax Highlighting"
 date: 2011-08-30T16:01:23+08:00
 lastmod: 2018-11-05T16:01:23+08:00
-draft: false
+draft: true
 tags: ["preview", "Syntax Highlighting", "tag-5"]
 categories: ["Syntax Highlighting"]
 
@@ -46,10 +46,10 @@ int main(void){
 ```
 
 ```cpp
-// 'Hello World!' program 
- 
+// 'Hello World!' program
+
 #include <iostream>
- 
+
 int main(){
   std::cout << "Hello World!" << std::endl;
   return 0;
@@ -59,7 +59,7 @@ int main(){
 ```cs
 using System;
 class HelloWorld{
-  public static void Main(){ 
+  public static void Main(){
     System.Console.WriteLine("Hello, World!");
   }
 }
@@ -77,7 +77,7 @@ class HelloWorld{
 package main
 import fmt "fmt"
 
-func main() 
+func main()
 {
    fmt.Printf("Hello, World!\n");
 }
@@ -96,7 +96,7 @@ object HelloWorld with Application {
 ```
 
 ```python
-print("Hello, World!") 
+print("Hello, World!")
 ```
 
 ```clojure

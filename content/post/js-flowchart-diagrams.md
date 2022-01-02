@@ -1,7 +1,7 @@
 ---
 title: "JS Flowchart Diagrams"
 date: 2015-03-04T21:57:50+08:00
-draft: false
+draft: true
 
 flowchartDiagrams:
   enable: true
@@ -111,7 +111,7 @@ c2(no)->op2->e
     or No?|approved:>http://www.google.com
     c2=>condition: Good idea|rejected
     io=>inputoutput: catch something...|request
-    
+
     st->op1(right)->cond
     cond(yes, right)->c2
     cond(no)->sub1(left)->op1

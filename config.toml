@@ -130,17 +130,20 @@ copyright = ""                    # 默认为下面配置的author.name
     hint = 30               # 如果文章最后更新于这天数之前，显示提醒
     warn = 180              # 如果文章最后更新于这天数之前，显示警告
 
-  [params.gitment]          # Gitment is a comment system based on GitHub issues. see https://github.com/imsun/gitment
+  # Gitment is a comment system based on GitHub issues. see https://github.com/imsun/gitment
+  [params.gitment]
     owner = ""              # Your GitHub ID
     repo = ""               # The repo to store comments
     clientId = ""           # Your client ID
     clientSecret = ""       # Your client secret
 
-  [params.utterances]       # https://utteranc.es/
-    owner = ""              # Your GitHub ID
-    repo = ""               # The repo to store comments
+  # https://utteranc.es/
+  [params.utterances]
+    owner = "gaofubao"                 # Your GitHub ID
+    repo = "gaofubao.github.io"        # The repo to store comments
 
-  [params.gitalk]           # Gitalk is a comment system based on GitHub issues. see https://github.com/gitalk/gitalk
+  # Gitalk is a comment system based on GitHub issues. see https://github.com/gitalk/gitalk
+  [params.gitalk]
     owner = ""              # Your GitHub ID
     repo = ""               # The repo to store comments
     clientId = ""           # Your client ID

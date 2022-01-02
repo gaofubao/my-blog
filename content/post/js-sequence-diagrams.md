@@ -1,9 +1,9 @@
 ---
 title: "JS Sequence Diagrams"
 date: 2015-03-04T21:57:45+08:00
-draft: false
+draft: true
 
-sequenceDiagrams: 
+sequenceDiagrams:
   enable: true
   options: "{theme: 'hand'}"
 ---
@@ -39,7 +39,7 @@ Configure for all home and regular pages:
 Configure for a single post in the front matter (**Params in front matter have higher precedence**):
 
 ```yaml
-sequenceDiagrams: 
+sequenceDiagrams:
   enable: true
   options: "{theme: 'hand'}"
 ```
